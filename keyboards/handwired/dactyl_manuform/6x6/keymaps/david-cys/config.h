@@ -26,4 +26,5 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define EE_HANDS
 // Rows are doubled-up
 
-#define TAPPING_TERM 240
+#define TAPPING_TERM 210
+#define IGNORE_MOD_TAP_INTERRUPT
