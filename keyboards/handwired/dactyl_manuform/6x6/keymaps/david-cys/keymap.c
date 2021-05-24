@@ -43,7 +43,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      KC_MUTE,KC_VOLU,KC_VOLD,KC_MPLY,KC_MSTP,KC_MPRV,                   KC_MNXT, KC_F8 , KC_F9 ,KC_F10 ,KC_F11 ,KC_F12 ,
      KC_TILD,KC_EXLM, KC_AT ,KC_HASH,KC_DLR ,KC_PERC,                   KC_CIRC,KC_AMPR,KC_ASTR,KC_LPRN,KC_RPRN,KC_DEL,
      _______,_______,_______,_______,_______,KC_LBRC,                   KC_RBRC, KC_P7 , KC_P8 , KC_P9 ,_______,KC_PLUS,
-     _______,KC_LEFT,KC_UP  ,KC_DOWN,KC_RGHT,KC_LPRN,                   KC_RPRN, KC_P4 , KC_P5 , KC_P6 ,KC_MINS,KC_PIPE,
+     _______,_______,_______,_______,_______,KC_LPRN,                   KC_RPRN,KC_LEFT,KC_DOWN, KC_UP ,KC_RGHT,KC_PIPE,
      _______,_______,_______,_______,_______,_______,                   _______, KC_P1 , KC_P2 , KC_P3 ,KC_EQL ,KC_UNDS,
 					 RESET  ,KC_PSCR,            										_______, KC_P0,
                              _______,_______,           						_______,_______,
