@@ -2,10 +2,12 @@
 
 
 #define _QWERTY 0
-#define _LOWER 1
-#define _RAISE 2
+#define _LOWER 2
+#define _RAISE 1
 
 #define RAISE MO(_RAISE)
+#define RAISEU DF(_RAISE)
+#define RAISED DF(_QWERTY)
 #define LOWER MO(_LOWER)
 
 #define HOME_A LGUI_T(KC_A)
@@ -35,7 +37,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 					 KC_PLUS,KC_EQL ,							                	  	KC_LBRC,KC_RBRC,
 							 KC_BSPC,KC_SPC ,           						KC_ENT, LOWER,
 									 KC_LALT,KC_HOME,					KC_END ,KC_DEL ,
-									 KC_LGUI,RAISE ,					KC_RGUI,KC_RALT
+									 KC_LGUI,RAISEU,					KC_RGUI,KC_RALT
   ),
 
   [_LOWER] = LAYOUT_6x6(
@@ -53,15 +55,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   [_RAISE] = LAYOUT_6x6(
 
-       KC_F12 , KC_F1 , KC_F2 , KC_F3 , KC_F4 , KC_F5 ,                 KC_F6  , KC_F7 , KC_F8 , KC_F9 ,KC_F10 ,KC_F11 ,
-       _______,_______,_______,_______,_______,_______,                 _______,_______,KC_NLCK,KC_INS ,KC_SLCK,KC_MUTE,
-       _______,_______,_______,_______,_______,KC_LBRC,                 KC_RBRC,_______,_______,_______,_______,KC_VOLU,
-       _______,KC_LEFT,KC_UP  ,KC_DOWN,KC_RGHT,KC_LPRN,                 KC_RPRN,KC_MPRV,KC_MPLY,KC_MNXT,_______,KC_VOLD,
        _______,_______,_______,_______,_______,_______,                 _______,_______,_______,_______,_______,_______,
-                       RESET  ,_______,            										KC_EQL ,_______,
+       _______,_______,_______,_______,_______,_______,                 _______,_______,_______,_______,_______,_______,
+       _______,_______,_______,_______,_______,_______,                 _______,_______,_______,_______,_______,_______,
+       _______,_______,_______,KC_D   ,KC_F   ,_______,                 _______,KC_J   ,KC_K   ,KC_L   ,KC_SCLN,_______,
+       _______,_______,_______,_______,_______,_______,                 _______,_______,_______,_______,_______,_______,
+                       _______,_______,            										_______,_______,
                                _______,_______,            						_______,_______,
                                        _______,_______,         		_______,_______,
-                                       _______,_______,         		_______,_______
+                                       _______,RAISED,         		_______,_______
   ),
 
 };
